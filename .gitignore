@@ -1,0 +1,13 @@
+# Python
+backend/__pycache__/
+backend/*.pyc
+backend/telecom.db
+backend/.env
+
+# Node
+frontend/node_modules/
+frontend/build/
+
+# Misc
+.DS_Store
+*.log
