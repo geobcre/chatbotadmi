@@ -8,7 +8,7 @@
 ```
 telecom-chatbot/
 ├── backend/
-│   ├── main.py          ← API FastAPI + Gemini
+│   ├── main.py          ← API FastAPI + Groq
 │   ├── database.py      ← SQLite (clientes, tickets, mensajes)
 │   ├── requirements.txt
 │   └── .env             ← Tu API Key aquí
@@ -29,7 +29,7 @@ telecom-chatbot/
 
 - Python 3.10+
 - Node.js 18+
-- API Key de Google Gemini → https://aistudio.google.com/app/apikey
+- API Key de Groq → https://console.groq.com/keys
 
 ---
 
@@ -49,7 +49,7 @@ venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 
 # Configurar API Key
-# Edita .env y reemplaza: GEMINI_API_KEY=tu_api_key_aqui
+# Edita .env y reemplaza: GROQ_API_KEY=tu_api_key_aqui
 
 # Correr el servidor
 uvicorn main:app --reload --port 8000
@@ -101,7 +101,7 @@ La app abre en: http://localhost:3000
 |---|---|
 | Backend | Python 3.12 + FastAPI |
 | Base de datos | SQLite (dev) / PostgreSQL (prod) |
-| IA | Google Gemini 2.0 Flash |
+| IA | Groq — LLaMA 3.3 70B |
 | Frontend | React 18 + CSS |
 | HTTP Client | Axios |
 | Servidor dev | Uvicorn |
